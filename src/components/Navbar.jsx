@@ -1,6 +1,6 @@
 import React from 'react'
 import { navLinks } from '../utils/data'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import { FaBars } from "react-icons/fa";
 
@@ -9,7 +9,7 @@ const Navbar = ({handleNav}) => {
       <nav className='w-full h-[70px] bg-[#1E2022] text-white'>
           <div className="max-w-[1440px] mx-auto h-full px-4 lg:px-2 xl:px-0 flex justify-between items-center">
               <div>
-                  <h1 className='text-[#F0F5F9] text-xl font-semibold lg:text-2xl xl:text-3xl'>X-Store</h1>
+                  <Link to='/' className='text-[#F0F5F9] text-xl font-semibold lg:text-2xl xl:text-3xl'>X-Store</Link>
               </div>
               <ul className='hidden md:flex gap-x-4'>
                   {navLinks.map((link) => {
